@@ -1,3 +1,5 @@
+@use '../global/_theme';
+
 // stylelint-disable no-descending-specificity
 body {
   background-color: var(--color-background);
