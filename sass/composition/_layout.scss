@@ -7,19 +7,6 @@ body {
   font-family: var(--font-family);
 }
 
-main {
-  padding-top: 5vh;
-  padding-bottom: 5vh;
-
-  &:focus {
-    outline: none;
-  }
-
-  h3 {
-    color: var(--color-primary);
-  }
-}
-
 article {
   section {
     display: flex;
@@ -27,17 +14,6 @@ article {
     align-items: flex-start;
     padding-top: 5vh;
     padding-bottom: 5vh;
-  }
-}
-
-article,
-.page-footer,
-#styles {
-  .container {
-    width: 100%;
-    max-width: 80ch;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 
