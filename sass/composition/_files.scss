@@ -1,2 +1,6 @@
 @use '../global/_theme';
 
+#files .container {
+  display: flex;
+  flex-direction: column;
+}
