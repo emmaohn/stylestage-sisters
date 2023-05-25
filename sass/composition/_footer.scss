@@ -1,8 +1,3 @@
 @use '../block/_logomark';
 @use '../global/_theme';
 
-.page-footer {
-  ul {
-    grid-template-columns: repeat(auto-fit, minmax(12ch, auto));
-  }
-}

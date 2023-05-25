@@ -1,9 +1,6 @@
 @use '../global/_theme';
 
-#files {
-  // makes the header disappear
-  h3 {
-    height: 0;
-    opacity: 0;
-  }
+#files .container {
+  display: flex;
+  flex-direction: column;
 }
