@@ -61,14 +61,13 @@ select {
   display: none;
 }
 
-@media screen and (min-width: 20em) {
+@media (min-width: 800px) {
   #main > .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
   #about {
-    grid-column: 1/12;
     display: contents;
   }
 
