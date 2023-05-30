@@ -1,7 +1,0 @@
-@use '../global/_theme';
-
-@mixin desktopGrid($columns) {
-  display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-}
-
