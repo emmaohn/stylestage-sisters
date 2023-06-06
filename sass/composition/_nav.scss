@@ -1,2 +1,9 @@
 @use '../global/_theme';
+@use '../utility/display' as d;
 
+nav ul {
+  @include d.flex(row, nowrap, space-between);
+  > li {
+    @include d.listReset;
+  }
+}
