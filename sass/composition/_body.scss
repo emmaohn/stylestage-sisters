@@ -1,0 +1,13 @@
+@use '../global/_theme' as t;
+
+html {
+  background-color: t.$secondary-light;
+}
+body {
+  background-color: transparent;
+}
+main {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: t.$primary-main;
+}

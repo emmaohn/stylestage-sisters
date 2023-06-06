@@ -57,7 +57,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.link-github svg {
+.link-github svg, a.skip-link {
   display: none;
 }
 
@@ -102,7 +102,46 @@ select {
     grid-row: 4/5;
   }
 }
+h1 {
+  font-family: "Sansita", sans-serif;
+  color: #e0218a;
+  text-align: center;
+  font-size: 5em;
+  position: relative;
+}
+h1::before {
+  content: "Style Stage";
+  position: absolute;
+  transform: translateX(7px);
+  color: #f7b9d7;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+nav ul > li {
+  list-style: none;
+  padding: 0;
+}
+
 #files .container {
   display: flex;
   flex-direction: column;
+}
+
+html {
+  background-color: #C4FFF9;
+}
+
+body {
+  background-color: transparent;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #ED5C9B;
 }
