@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@font-face {
+  font-family: barbieFont;
+  src: url("/sass/block/items/barbie.ttf");
+}
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -102,8 +106,12 @@ select {
     grid-row: 4/5;
   }
 }
+header {
+  background-image: url("/sass/block/items/plane100px.svg");
+}
+
 h1 {
-  font-family: "Sansita", sans-serif;
+  font-family: barbieFont;
   color: #e0218a;
   text-align: center;
   font-size: 5em;
