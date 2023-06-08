@@ -1,6 +1,10 @@
 @use '../global/_theme';
+
+header{
+    background-image: url( '/sass/block/items/plane.svg' );
+}
 h1{
-    font-family: 'Sansita', sans-serif;
+    font-family: barbieFont;
     color: #e0218a;
     text-align: center;
     font-size: 5em;
