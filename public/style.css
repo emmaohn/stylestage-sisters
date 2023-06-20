@@ -106,10 +106,6 @@ select {
     grid-row: 4/5;
   }
 }
-header {
-  background-image: url("/sass/block/items/plane100px.svg");
-}
-
 h1 {
   font-family: barbieFont;
   color: #e0218a;
@@ -122,6 +118,13 @@ h1::before {
   position: absolute;
   transform: translateX(7px);
   color: #f7b9d7;
+}
+
+header > .container {
+  background-image: url("/sass/block/items/plane100px.svg");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 10% 75%;
 }
 
 nav ul {
