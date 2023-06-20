@@ -1,3 +1,11 @@
-// cursive header font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Tilt+Warp&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+h2, h3, h4, h5, h6 {
+    font-family: 'Tilt Warp', cursive;
+}
+p, a, li {
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    text-decoration: none;
+}
