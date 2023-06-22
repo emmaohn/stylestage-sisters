@@ -1,2 +1,57 @@
 @use '../global/_theme';
+@use './_fonts';
+@use '../utility/_breakpoint' as b;
 
+// set fluid scale
+$ratio: 1.15;
+$s0: 1rem;
+$s1: $s0 * $ratio;
+$s2: $s1 * $ratio;
+$s3: $s2 * $ratio;
+$s4: $s3 * $ratio;
+$s5: $s4 * $ratio;
+$s-1: $s0 / $ratio;
+$s-2: $s-1 / $ratio;
+$s-3: $s-2 / $ratio;
+$s-4: $s-3 / $ratio;
+$s-5: $s-4 / $ratio;
+
+// default font weight
+$wght: 400;
+
+html {
+  font-size: 20px;
+}
+
+* {
+  font-weight: $wght;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: $s0;
+}
+
+h1{
+  font-family: 'Sansita Swashed', sans-serif;
+  color: #e0218a;
+  text-align: center;
+  font-size: $s5;
+  font-size-adjust: 1;
+  margin-top: .5em;
+  &::after{
+    content: "Style Stage";
+    display: block;
+    color: #f7b9d7;
+    position: relative;
+    left: 5px;
+    bottom: 60px;
+  }
+  @include b.medium-break {
+    font-size-adjust: 1.5;
+  }
+}
+
+h2 {
+  font-size: $s4;
+}
