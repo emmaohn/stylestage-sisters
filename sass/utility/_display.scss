@@ -1,0 +1,31 @@
+// GRID MIXINS HERE
+
+// grids are automatically made with repeated 1fr
+// plan accordingly!!
+@mixin grid($columns) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+}
+
+// if a row is not needed, input "null, null" 
+// for rowStart and rowEnd
+@mixin columnRow($colStart, $colEnd, $rowStart, $rowEnd) {
+  grid-column: #{$colStart}/#{$colEnd};
+  @if $rowStart != null and $rowEnd != null {
+    grid-row: #{$rowStart}/#{$rowEnd};
+  }
+}
+
+// FLEX MIXINS HERE
+
+@mixin flex($fd, $fw, $jc) {
+  display: flex;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+  justify-content: $jc;
+}
+
+@mixin listReset {
+  list-style: none;
+  padding: 0;
+}

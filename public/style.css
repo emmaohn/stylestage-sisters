@@ -1,4 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap");
+
 h2, h3, h4, h5, h6 {
   font-family: "Tilt Warp", cursive;
 }
@@ -69,18 +71,56 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.link-github svg {
+.link-github svg, a.skip-link {
   display: none;
 }
 
-@media screen and (min-width: 20em) {
+html {
+  font-size: 20px;
+}
+
+* {
+  font-weight: 400;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+}
+
+h1 {
+  font-family: "Sansita Swashed", sans-serif;
+  color: #e0218a;
+  text-align: center;
+  font-size: 2.0113571875rem;
+  font-size-adjust: 1;
+  margin-top: 0.5em;
+}
+h1::after {
+  content: "Style Stage";
+  display: block;
+  color: #f7b9d7;
+  position: relative;
+  left: 5px;
+  bottom: 60px;
+}
+@media (min-width: 600px) {
+  h1 {
+    font-size-adjust: 1.5;
+  }
+}
+
+h2 {
+  font-size: 1.74900625rem;
+}
+
+@media (min-width: 600px) {
   #main > .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
 
   #about {
-    grid-column: 1/12;
     display: contents;
   }
 
@@ -115,7 +155,32 @@ select {
     grid-row: 4/5;
   }
 }
+nav ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+nav ul > li {
+  list-style: none;
+  padding: 0;
+}
+
 #files .container {
   display: flex;
   flex-direction: column;
+}
+
+html {
+  background-color: #C4FFF9;
+}
+
+body {
+  background-color: transparent;
+}
+
+main {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #ED5C9B;
 }

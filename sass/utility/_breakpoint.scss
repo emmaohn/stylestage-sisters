@@ -1,0 +1,5 @@
+@mixin medium-break {
+  @media (min-width: 600px) { @content; }
+}
+
+$medium: "min-width: 600px";
