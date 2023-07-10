@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
 
 h2, h3, h4, h5, h6 {
   font-family: "Tilt Warp", cursive;
@@ -11,6 +12,11 @@ p, a, li {
 
 a {
   text-decoration: none;
+}
+
+@font-face {
+  font-family: barbieFont;
+  src: url("/sass/block/items/barbie.ttf");
 }
 
 /*

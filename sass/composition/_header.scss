@@ -1,2 +1,28 @@
 @use '../global/_theme';
 
+h1{
+    font-family: barbieFont;
+    color: #e0218a;
+    text-align: center;
+    font-size: 5em;
+    position: relative;
+    // &::after{
+    //     content: "Style Stage";
+    //     position: absolute;
+    //     transform: translateX(-10px);
+    //     color: #fff6f6;
+    // }
+    &::before{
+        content: "Style Stage";
+        position: absolute;
+        transform: translateX(7px);
+        color: #f7b9d7;
+    } 
+} 
+
+header > .container{
+    background-image: url( '/sass/block/items/plane100px.svg' );
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 10% 75%;
+}
