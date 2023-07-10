@@ -1,6 +1,26 @@
-// cursive header font
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+h2, h3, h4, h5, h6 {
+    font-family: 'Tilt Warp', cursive;
+}
+p, a, li {
+    font-family: 'Quicksand', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+
+// cursive header font
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
+// another cursive option
+// @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+
+// another cursive option
+// @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+// static body font
+// @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 @font-face {
     font-family: barbieFont;
