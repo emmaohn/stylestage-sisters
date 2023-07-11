@@ -1,3 +1,16 @@
 @use '../block/_logomark';
-@use '../global/_theme';
+@use '../global/_theme' as t;
+
+
+.page-footer{
+    background-color: t.$road-dark;
+    margin-top: -20px;
+    padding: 20px;
+    color: white;
+}
+
+.page-footer a{
+    color: t.$primary-medium-light;
+}
+
 
