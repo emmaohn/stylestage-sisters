@@ -1,5 +1,18 @@
+// DO NOT CHANGE body copy font import
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap');
 
+// CURSIVE FONT FAMILY BACKUP cursive header font
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
+// barbie font
+@font-face {
+    font-family: barbieFont;
+    src: url('/sass/block/items/barbie.ttf');
+}
+
+h1 {
+    font-family: "barbieFont", "Sansita Swashed", "Quicksand", sans-serif;
+}
 h2, h3, h4, h5, h6 {
     font-family: 'Tilt Warp', cursive;
 }
@@ -10,8 +23,7 @@ a {
     text-decoration: none;
 }
 
-// cursive header font
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+
 
 // another cursive option
 // @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
@@ -22,7 +34,4 @@ a {
 // static body font
 // @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
-@font-face {
-    font-family: barbieFont;
-    src: url('/sass/block/items/barbie.ttf');
-}
+
