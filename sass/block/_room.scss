@@ -1,0 +1,14 @@
+@use '../global/_theme'as t;
+$ceiling: 6px solid t.$flooring;
+$floor: 6px solid t.$flooring;
+$walls: 8px solid t.$flooring;
+$outside-wall: 8px solid t.$flooring;
+
+
+
+@mixin borders($ceiling, $floor, $left-wall, $right-wall){
+    border-top: $ceiling;
+    border-bottom: $floor;
+    border-right: $walls;
+    border-left: $walls;
+}
