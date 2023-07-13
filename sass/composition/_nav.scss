@@ -7,7 +7,7 @@ nav ul {
     @include d.listReset;
   }
   height: clamp(10em, 30vw, 25em);
-  background-image: url('/images/backgrounds/attic_background.svg');
+  background-image: url('/public/images/backgrounds/attic_background.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom 0px center;
@@ -25,7 +25,7 @@ nav ul li a{
 
 a[href*="about"]{
   @include d.navTrunks;
-  background-image: url('/images/items/trunkone.svg');
+  background-image: url('/public/images/items/attictrunk1.svg');
 }
 
 a[href*="resources"]{
