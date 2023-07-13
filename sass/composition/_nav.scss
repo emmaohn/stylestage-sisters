@@ -27,3 +27,7 @@ a[href*="about"]{
   @include d.navTrunks;
   background-image: url('/images/items/trunkone.svg');
 }
+
+a[href*="resources"]{
+  margin-right: 5.5vw;
+}

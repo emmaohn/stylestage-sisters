@@ -11,3 +11,24 @@ main {
   margin: 0 auto;
   background-color: t.$primary-main;
 }
+
+#about .container:nth-of-type(1){
+  background-image: url('/sass/block/backgrounds/room_bg_one.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+#about .container:nth-of-type(2){
+  background-image: url('/sass/block/backgrounds/room_bg_two.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
+
+#guidelines{
+  background-image: url('/sass/block/backgrounds/room_bg_three.svg');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+}
