@@ -30,7 +30,7 @@ body {
 
 h1{
   text-align: center;
-  margin-top: .5em;
+  margin-top: $s-2;
   color: #e0218a;
   font-size: clamp(5em, 12vw, 10em);
   position: relative;

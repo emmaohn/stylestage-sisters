@@ -5,6 +5,7 @@
 // For example:
 // $color-primary: #3a0;
 @use "global/theme";
+@use "global/links";
 @use "utility/reset";
 @use "block/logomark";
 @use "block/room";
@@ -20,4 +21,3 @@
 @use "composition/profile";
 @use "composition/footer";
 @use "composition/body";
-@use "global/links";

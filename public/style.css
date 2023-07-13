@@ -78,7 +78,7 @@ select {
     scroll-behavior: auto !important;
   }
 }
-.link-github svg, a.skip-link {
+a.skip-link {
   display: none;
 }
 
@@ -97,7 +97,7 @@ body {
 
 h1 {
   text-align: center;
-  margin-top: 0.5em;
+  margin-top: clamp(0.79rem, calc(0.73rem + 0.29vw), 0.96rem);
   color: #e0218a;
   font-size: clamp(5em, 12vw, 10em);
   position: relative;
@@ -154,11 +154,32 @@ h2 {
     grid-row: 4/5;
   }
 }
-main header > .container {
-  background-image: url("/sass/block/items/plane100px.svg");
-  background-size: 300px;
-  background-repeat: no-repeat;
-  background-position: 10% 75%;
+header > .container h2, header > .container p, header > .container a {
+  display: block;
+  font-size: clamp(1.13rem, calc(0.94rem + 0.91vw), 1.65rem);
+  margin: 0;
+  padding: 0;
+  padding: 0 1em;
+  text-align: center;
+}
+header > .container a {
+  color: #ED5C9B;
+}
+header > .container a > span > svg {
+  height: clamp(1rem, calc(0.87rem + 0.65vw), 1.38rem);
+}
+header > .container > :not(h1) {
+  background-color: white;
+  margin-left: clamp(250px, 12em, 500px);
+}
+
+header::before {
+  content: url("/images/items/plane100px.svg");
+  display: block;
+  width: clamp(200px, 12em, 500px);
+  height: clamp(200px, 12em, 300px);
+  position: absolute;
+  top: clamp(12em, 30vw, 15em);
 }
 
 nav ul {
@@ -167,8 +188,8 @@ nav ul {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-end;
-  height: 60vh;
-  background-image: url("/sass/block/backgrounds/attic_background.svg");
+  height: clamp(10em, 30vw, 25em);
+  background-image: url("/images/backgrounds/attic_background.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom 0px center;
@@ -181,9 +202,8 @@ nav ul > li {
 }
 
 nav {
-  height: 100%;
   width: 90vw;
-  margin-left: 4.5vw;
+  margin: 0 auto;
 }
 
 nav ul li a {
@@ -194,7 +214,7 @@ a[href*=about] {
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url("/sass/block/items/trunkone.svg");
+  background-image: url("/images/items/items/trunkone.svg");
   margin-left: 5.5vw;
 }
 
