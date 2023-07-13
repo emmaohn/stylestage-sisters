@@ -1,2 +1,7 @@
 @use '../global/_theme';
+@use '../block/_room' as r;
 
+#guidelines{
+    @include r.borders(r.$ceiling, r.$floor, r.$walls, r.$walls);
+    padding: 5vw;
+}

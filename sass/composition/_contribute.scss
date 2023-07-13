@@ -1,2 +1,17 @@
 @use '../global/_theme';
+@use '../block/_room' as r;
+@use '../utility/_display' as d;
 
+
+
+#contribute .container{
+    @include r.borders(r.$ceiling, r.$floor, r.$walls, r.$walls);
+    padding: 5vw;
+}
+
+#files{
+    @include d.columnRow(3,4,1,2);
+    text-align: center;
+    line-height: 5vw;
+    height: 100%;
+}
