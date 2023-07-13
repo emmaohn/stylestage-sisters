@@ -6,8 +6,8 @@ nav ul {
   > li {
     @include d.listReset;
   }
-  height: 60vh;
-  background-image: url('/sass/block/backgrounds/attic_background.svg');
+  height: clamp(10em, 30vw, 25em);
+  background-image: url('/images/backgrounds/attic_background.svg');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom 0px center;
@@ -15,9 +15,8 @@ nav ul {
 }
 
 nav{
-  height:100%;
   width: 90vw;
-  margin-left: 4.5vw;;
+  margin: 0 auto;
 }
 
 nav ul li a{
@@ -26,5 +25,5 @@ nav ul li a{
 
 a[href*="about"]{
   @include d.navTrunks;
-  background-image: url('/sass/block/items/trunkone.svg');
+  background-image: url('/images/items/trunkone.svg');
 }
