@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+main
 h2, h3, h4, h5, h6 {
   font-family: "Tilt Warp", cursive;
 }
@@ -79,7 +80,7 @@ select {
 }
 
 html {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 * {
@@ -88,33 +89,25 @@ html {
 
 body {
   font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
+  font-size: clamp(1rem, calc(0.87rem + 0.65vw), 1.38rem);
 }
 
 h1 {
-  font-family: "Sansita Swashed", sans-serif;
-  color: #e0218a;
   text-align: center;
-  font-size: 2.0113571875rem;
-  font-size-adjust: 1;
   margin-top: 0.5em;
-}
-h1::after {
-  content: "Style Stage";
-  display: block;
-  color: #f7b9d7;
+  color: #e0218a;
+  font-size: clamp(5em, 12vw, 10em);
   position: relative;
-  left: 5px;
-  bottom: 60px;
 }
-@media (min-width: 600px) {
-  h1 {
-    font-size-adjust: 1.5;
-  }
+h1::before {
+  content: "Style Stage";
+  position: absolute;
+  transform: translateX(7px);
+  color: #f7b9d7;
 }
 
 h2 {
-  font-size: 1.74900625rem;
+  font-size: clamp(1.6rem, calc(1.17rem + 2.17vw), 2.85rem);
 }
 
 @media (min-width: 600px) {
@@ -158,20 +151,6 @@ h2 {
     grid-row: 4/5;
   }
 }
-h1 {
-  font-family: barbieFont;
-  color: #e0218a;
-  text-align: center;
-  font-size: 5em;
-  position: relative;
-}
-h1::before {
-  content: "Style Stage";
-  position: absolute;
-  transform: translateX(7px);
-  color: #f7b9d7;
-}
-
 header > .container {
   background-image: url("/sass/block/items/plane100px.svg");
   background-size: 300px;
@@ -218,6 +197,43 @@ a[href*=about] {
 #files .container {
   display: flex;
   flex-direction: column;
+}
+
+#styles {
+  background-color: #4AD555;
+}
+
+#styles .container {
+  background-color: #d1d1d1;
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  border-top: solid 4px #6E6E6E;
+  margin-bottom: 20px;
+}
+
+.profile {
+  background-color: #4AD555;
+  margin-bottom: -10px;
+}
+
+.profile .container {
+  background-color: #d1d1d1;
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  border-bottom: solid 5px #6E6E6E;
+}
+
+.page-footer {
+  background-color: #3D3D3D;
+  margin-top: -20px;
+  padding: 20px;
+  color: white;
+}
+
+.page-footer a {
+  color: #F7B9D7;
 }
 
 html {
