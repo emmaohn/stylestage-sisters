@@ -184,10 +184,21 @@ nav ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: center;
+  height: 60vh;
+  background-image: url("/sass/block/backgrounds/attic_background.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 0px center;
 }
 nav ul > li {
   list-style: none;
   padding: 0;
+}
+
+nav {
+  height: 100%;
+  width: 90vw;
 }
 
 #files .container {

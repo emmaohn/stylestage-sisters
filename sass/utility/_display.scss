@@ -18,11 +18,12 @@
 
 // FLEX MIXINS HERE
 
-@mixin flex($fd, $fw, $jc) {
+@mixin flex($fd, $fw, $jc, $ai) {
   display: flex;
   flex-direction: $fd;
   flex-wrap: $fw;
   justify-content: $jc;
+  align-items:$ai;
 }
 
 @mixin listReset {
