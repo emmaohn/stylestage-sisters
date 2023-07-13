@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="bathroom_counter" data-name="bathroom counter" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bbbdbf;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m146.29,50.32v-7.57c0-5.34-12.69-9.68-28.35-9.68-3.59,0-7.02.23-10.18.65v-1.28c0-9.21-7.47-16.68-16.68-16.68h-2.98c-9.21,0-16.68,7.47-16.68,16.68v22.49l-30.47,8.31v166.17l64.81,5.35,64.02-21.71V52.99l-23.47-2.67Z"/>
+</svg>

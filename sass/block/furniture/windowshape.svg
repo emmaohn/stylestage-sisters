@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="mirror" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 250 250">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #bbbdbf;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="m124.95,16.74c-22.36,0-40.48,10.78-40.48,19.5v197.51h80.96V36.24c0-8.73-18.12-19.5-40.48-19.5Z"/>
+</svg>
