@@ -29,4 +29,11 @@
 @mixin listReset {
   list-style: none;
   padding: 0;
+  margin: 45px;
+}
+
+@mixin navTrunks {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
 }

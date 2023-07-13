@@ -184,21 +184,35 @@ nav ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   height: 60vh;
   background-image: url("/sass/block/backgrounds/attic_background.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom 0px center;
+  margin-bottom: 0;
 }
 nav ul > li {
   list-style: none;
   padding: 0;
+  margin: 45px;
 }
 
 nav {
   height: 100%;
   width: 90vw;
+  margin-left: 4.5vw;
+}
+
+nav ul li a {
+  color: white;
+}
+
+a[href*=about] {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/sass/block/items/trunkone.svg");
 }
 
 #files .container {
