@@ -1,4 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
+main
+h2, h3, h4, h5, h6 {
+  font-family: "Tilt Warp", cursive;
+}
+
+p, a, li {
+  font-family: "Quicksand", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: barbieFont;
   src: url("/sass/block/items/barbie.ttf");
@@ -14,32 +28,10 @@
   box-sizing: border-box;
 }
 
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-html {
-  overflow-x: hidden;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  font-size: 100%;
-  line-height: 1.5;
-  text-rendering: optimizeSpeed;
-  overflow-x: hidden;
-}
-
-/* Make images easier to work with */
-img {
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
   display: block;
   max-width: 100%;
 }
@@ -65,7 +57,38 @@ select {
   display: none;
 }
 
-@media (min-width: 800px) {
+html {
+  font-size: 18px;
+}
+
+* {
+  font-weight: 400;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-size: clamp(1rem, calc(0.87rem + 0.65vw), 1.38rem);
+}
+
+h1 {
+  text-align: center;
+  margin-top: 0.5em;
+  color: #e0218a;
+  font-size: clamp(5em, 12vw, 10em);
+  position: relative;
+}
+h1::before {
+  content: "Style Stage";
+  position: absolute;
+  transform: translateX(7px);
+  color: #f7b9d7;
+}
+
+h2 {
+  font-size: clamp(1.6rem, calc(1.17rem + 2.17vw), 2.85rem);
+}
+
+@media (min-width: 600px) {
   #main > .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -106,20 +129,6 @@ select {
     grid-row: 4/5;
   }
 }
-h1 {
-  font-family: barbieFont;
-  color: #e0218a;
-  text-align: center;
-  font-size: 5em;
-  position: relative;
-}
-h1::before {
-  content: "Style Stage";
-  position: absolute;
-  transform: translateX(7px);
-  color: #f7b9d7;
-}
-
 header > .container {
   background-image: url("/sass/block/items/plane100px.svg");
   background-size: 300px;
@@ -132,15 +141,77 @@ nav ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-end;
+  height: 60vh;
+  background-image: url("/sass/block/backgrounds/attic_background.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 0px center;
+  margin-bottom: 0;
 }
 nav ul > li {
   list-style: none;
   padding: 0;
+  margin: 45px;
+}
+
+nav {
+  height: 100%;
+  width: 90vw;
+  margin-left: 4.5vw;
+}
+
+nav ul li a {
+  color: white;
+}
+
+a[href*=about] {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/sass/block/items/trunkone.svg");
 }
 
 #files .container {
   display: flex;
   flex-direction: column;
+}
+
+#styles {
+  background-color: #4AD555;
+}
+
+#styles .container {
+  background-color: #d1d1d1;
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  border-top: solid 4px #6E6E6E;
+  margin-bottom: 20px;
+}
+
+.profile {
+  background-color: #4AD555;
+  margin-bottom: -10px;
+}
+
+.profile .container {
+  background-color: #d1d1d1;
+  width: 70vw;
+  margin: auto;
+  padding: 20px;
+  border-bottom: solid 5px #6E6E6E;
+}
+
+.page-footer {
+  background-color: #3D3D3D;
+  margin-top: -20px;
+  padding: 20px;
+  color: white;
+}
+
+.page-footer a {
+  color: #F7B9D7;
 }
 
 html {

@@ -1,2 +1,47 @@
 @use '../global/_theme';
+@use './_fonts';
+@use '../utility/_breakpoint' as b;
 
+// set fluid scale
+$s-2: clamp(0.79rem, calc(0.73rem + 0.29vw), 0.96rem);
+$s-1: clamp(0.89rem, calc(0.80rem + 0.45vw), 1.15rem);
+$s0: clamp(1.00rem, calc(0.87rem + 0.65vw), 1.38rem);
+$s1: clamp(1.13rem, calc(0.94rem + 0.91vw), 1.65rem);
+$s2: clamp(1.27rem, calc(1.02rem + 1.24vw), 1.98rem);
+$s3: clamp(1.42rem, calc(1.09rem + 1.66vw), 2.38rem);
+$s4: clamp(1.60rem, calc(1.17rem + 2.17vw), 2.85rem);
+$s5: clamp(1.80rem, calc(1.24rem + 2.82vw), 3.42rem);
+
+// default font weight
+$wght: 400;
+
+html {
+  font-size: 18px;
+}
+
+* {
+  font-weight: $wght;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  font-size: $s0;
+}
+
+h1{
+  text-align: center;
+  margin-top: .5em;
+  color: #e0218a;
+  font-size: clamp(5em, 12vw, 10em);
+  position: relative;
+  &::before{
+    content: "Style Stage";
+    position: absolute;
+    transform: translateX(7px);
+    color: #f7b9d7;
+  }
+}
+
+h2 {
+  font-size: $s4;
+}

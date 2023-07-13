@@ -1,7 +1,5 @@
-// @function break($break) {
-//   @if $break == "medium" {
-//     @return "min-width: 800px"
-//   }
-// }
+@mixin medium-break {
+  @media (min-width: 600px) { @content; }
+}
 
-$medium: "min-width: 800px";
+$medium: "min-width: 600px";

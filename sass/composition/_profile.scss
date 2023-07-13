@@ -1,2 +1,21 @@
-@use '../global/_theme';
+@use '../global/_theme' as t;
+
+.profile{
+    background-color: #4AD555;
+    margin-bottom: -10px;
+}
+.profile .container{
+    background-color: t.$driveway-main;
+    width: 70vw;
+    margin: auto;
+    padding: 20px;
+    border-bottom: solid 5px t.$driveway-dark;
+    // border-bottom: 20vw solid #d1d1d1;
+	// border-left: 25px solid transparent;
+	// border-right: 25px solid transparent;
+	// height: 0;
+	// width: 70vw;
+    // margin: auto;
+    // padding-left: 50px;
+}
 

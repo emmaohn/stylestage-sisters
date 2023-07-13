@@ -2,8 +2,29 @@
 @use '../utility/display' as d;
 
 nav ul {
-  @include d.flex(row, nowrap, space-between);
+  @include d.flex(row, nowrap, space-between, flex-end);
   > li {
     @include d.listReset;
   }
+  height: 60vh;
+  background-image: url('/sass/block/backgrounds/attic_background.svg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 0px center;
+  margin-bottom: 0;
+}
+
+nav{
+  height:100%;
+  width: 90vw;
+  margin-left: 4.5vw;;
+}
+
+nav ul li a{
+  color: white;
+}
+
+a[href*="about"]{
+  @include d.navTrunks;
+  background-image: url('/sass/block/items/trunkone.svg');
 }
