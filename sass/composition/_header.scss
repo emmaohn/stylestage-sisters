@@ -1,17 +1,6 @@
 @use '../global/_theme';
 
-// h1{
-//     color: #e0218a;
-//     text-align: center;
-//     font-size: 5em;
-//     position: relative;
-//     &::before{
-//         content: "Style Stage";
-//         position: absolute;
-//         transform: translateX(7px);
-//         color: #f7b9d7;
-//     } 
-// } 
+ main
 
 header > .container{
     background-image: url( '/sass/block/items/plane100px.svg' );
@@ -19,3 +8,4 @@ header > .container{
     background-repeat: no-repeat;
     background-position: 10% 75%;
 }
+

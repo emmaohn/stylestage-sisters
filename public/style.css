@@ -1,13 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Tilt+Warp&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap");
-@font-face {
-  font-family: barbieFont;
-  src: url("/sass/block/items/barbie.ttf");
-}
-h1 {
-  font-family: "barbieFont", "Sansita Swashed", "Quicksand", sans-serif;
-}
-
+main
 h2, h3, h4, h5, h6 {
   font-family: "Tilt Warp", cursive;
 }
@@ -20,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+@font-face {
+  font-family: barbieFont;
+  src: url("/sass/block/items/barbie.ttf");
+}
 /*
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
@@ -166,10 +163,35 @@ nav ul {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
+  align-items: flex-end;
+  height: 60vh;
+  background-image: url("/sass/block/backgrounds/attic_background.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom 0px center;
+  margin-bottom: 0;
 }
 nav ul > li {
   list-style: none;
   padding: 0;
+  margin: 45px;
+}
+
+nav {
+  height: 100%;
+  width: 90vw;
+  margin-left: 4.5vw;
+}
+
+nav ul li a {
+  color: white;
+}
+
+a[href*=about] {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/sass/block/items/trunkone.svg");
 }
 
 #files .container {
