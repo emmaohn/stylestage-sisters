@@ -1,12 +1,21 @@
 @use '../block/_logomark';
 @use '../global/_theme' as t;
+@use '../global/_typography' as font;
+@use '../utility/_display' as d;
 
 
-.page-footer{
+.page-footer .container {
     background-color: t.$road-dark;
     margin-top: -20px;
     padding: 20px;
     color: white;
+    text-align: center;
+    ul {
+        @include d.listReset;
+        svg {
+            height: font.$s0;
+        }
+    }
 }
 
 .page-footer a{

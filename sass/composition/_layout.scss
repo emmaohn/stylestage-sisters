@@ -4,7 +4,6 @@
 
 @media (b.$medium) {
   #main > .container {
-    // @include display.grid(12);
     @include display.grid(12);
   }
 

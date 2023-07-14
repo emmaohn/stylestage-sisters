@@ -113,7 +113,7 @@ h2 {
   font-size: clamp(1.6rem, calc(1.17rem + 2.17vw), 2.85rem);
 }
 
-@media (min-width: 600px) {
+@media (min-width: 800px) {
   #main > .container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
@@ -156,7 +156,7 @@ h2 {
 }
 header > .container h2, header > .container p, header > .container a {
   display: block;
-  font-size: clamp(1.13rem, calc(0.94rem + 0.91vw), 1.65rem);
+  font-size: clamp(0.89rem, calc(0.80rem + 0.45vw), 1.15rem);
   margin: 0;
   padding: 0;
   padding: 0 1em;
@@ -166,11 +166,18 @@ header > .container a {
   color: #ED5C9B;
 }
 header > .container a > span > svg {
-  height: clamp(1rem, calc(0.87rem + 0.65vw), 1.38rem);
+  height: clamp(0.89rem, calc(0.80rem + 0.45vw), 1.15rem);
+  fill: #ED5C9B;
 }
 header > .container > :not(h1) {
   background-color: white;
-  margin-left: clamp(250px, 12em, 500px);
+  margin-left: clamp(300px, 15em, 550px);
+}
+header > .container h2 {
+  border-radius: 1em 0 0 0;
+}
+header > .container > a {
+  border-radius: 0 0 0 1em;
 }
 
 header::before {
@@ -189,7 +196,7 @@ nav ul {
   justify-content: space-between;
   align-items: flex-end;
   height: clamp(10em, 30vw, 25em);
-  background-image: url("/public/images/backgrounds/attic_background.svg");
+  background-image: url("/images/backgrounds/attic_background.svg");
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: bottom 0px center;
@@ -198,7 +205,6 @@ nav ul {
 nav ul > li {
   list-style: none;
   padding: 0;
-  margin: 45px;
 }
 
 nav {
@@ -208,13 +214,6 @@ nav {
 
 nav ul li a {
   color: white;
-}
-
-a[href*=about] {
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-image: url("/public/images/items/attictrunk1.svg");
 }
 
 a[href*=resources] {
@@ -228,13 +227,41 @@ a[href*=resources] {
   border-left: 8px solid #F9F7F3;
   padding: 5vw;
 }
+#about .container ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+#about .container ul li {
+  display: inline-block;
+  padding: 0 0.2em;
+  margin: 0.2em 0.1em;
+  background-color: rgba(250, 205, 229, 0.8);
+}
+@media (min-width: 800px) {
+  #about .container ul li {
+    display: inline;
+    padding: 0 0.2em;
+    line-height: 2em;
+  }
+}
+#about .container a {
+  color: #E0218A;
+}
 
-#guidelines {
+#about .container:first-of-type a {
+  color: #C4FFF9;
+}
+
+#guidelines .container {
   border-top: 6px solid #F9F7F3;
   border-bottom: 6px solid #F9F7F3;
   border-right: 8px solid #F9F7F3;
   border-left: 8px solid #F9F7F3;
   padding: 5vw;
+}
+#guidelines .container a {
+  color: #E0218A;
 }
 
 #contribute .container {
@@ -270,6 +297,13 @@ a[href*=resources] {
   border-top: solid 4px #6E6E6E;
   margin-bottom: 20px;
 }
+#styles .container ul {
+  list-style: none;
+  padding: 0;
+}
+#styles .container a {
+  color: #ED5C9B;
+}
 
 .profile {
   background-color: #4AD555;
@@ -283,12 +317,27 @@ a[href*=resources] {
   padding: 20px;
   border-bottom: solid 5px #6E6E6E;
 }
+.profile .container ul {
+  list-style: none;
+  padding: 0;
+}
+.profile .container a {
+  color: #ED5C9B;
+}
 
-.page-footer {
+.page-footer .container {
   background-color: #3D3D3D;
   margin-top: -20px;
   padding: 20px;
   color: white;
+  text-align: center;
+}
+.page-footer .container ul {
+  list-style: none;
+  padding: 0;
+}
+.page-footer .container ul svg {
+  height: clamp(1rem, calc(0.87rem + 0.65vw), 1.38rem);
 }
 
 .page-footer a {
@@ -310,21 +359,21 @@ main {
 }
 
 #about .container:nth-of-type(1) {
-  background-image: url("/public/images/backgrounds/room_bg_one.svg");
+  background-image: url("/images/backgrounds/room_bg_one.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 #about .container:nth-of-type(2) {
-  background-image: url("/public/images/backgrounds/room_bg_two.svg");
+  background-image: url("/images/backgrounds/room_bg_two.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 
 #guidelines {
-  background-image: url("/public/images/backgrounds/room_bg_three.svg");
+  background-image: url("/images/backgrounds/room_bg_three.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

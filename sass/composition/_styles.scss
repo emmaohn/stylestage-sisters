@@ -1,4 +1,5 @@
-@use '../global/_theme'as t;
+@use '../global/_theme' as t;
+@use '../utility/_display' as d;
 
 #styles{
     background-color: #4AD555;
@@ -10,11 +11,10 @@
     padding: 20px;
     border-top: solid 4px t.$driveway-dark;
     margin-bottom: 20px;
-    // border-bottom: 20vw solid #d1d1d1;
-	// border-left: 25px solid transparent;
-	// border-right: 25px solid transparent;
-	// height: 0;
-	// width: 74vw;
-    // margin: auto;
-    // padding-left: 50px;
+    ul {
+        @include d.listReset;
+    }
+    a {
+        color: t.$primary-main;
+    }
 }
