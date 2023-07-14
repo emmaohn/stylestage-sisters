@@ -1,7 +1,10 @@
-@use '../global/_theme';
+@use '../global/_theme' as t;
 @use '../block/_room' as r;
 
-#guidelines{
+#guidelines .container {
     @include r.borders(r.$ceiling, r.$floor, r.$walls, r.$walls);
     padding: 5vw;
+    a {
+        color: t.$primary-dark;
+    }
 }

@@ -1,8 +1,33 @@
-@use '../global/_theme';
+@use '../global/_theme' as t;
 @use '../block/_room' as r;
-
+@use '../utility/_display' as d;
+@use '../utility/_breakpoint' as b;
 
 #about .container{
     @include r.borders(r.$ceiling, r.$floor, r.$walls, r.$walls);
     padding: 5vw;
+    ul {
+        @include d.listReset;
+        text-align: center;
+        li {
+            display: inline-block;
+            padding: 0 .2em;
+            margin: .2em .1em;
+            background-color: rgba(t.$primary-light, .8);
+            @include b.medium-break {
+                display: inline;
+                padding: 0 .2em;
+                line-height: 2em;
+            }
+        }
+    }
+    a {
+        color: t.$primary-dark;
+    }
+}
+
+#about .container:first-of-type {
+    a {
+        color: t.$secondary-light;
+    }
 }
