@@ -15,7 +15,7 @@ nav ul {
 }
 
 nav{
-  width: 90vw;
+  width: 98vw;
   margin: 0 auto;
 }
 
@@ -23,10 +23,10 @@ nav ul li a{
   color: white;
 }
 
-a[href*="about"]{
-  @include d.navTrunks;
-  background-image: url('/public/images/items/attictrunk1.svg');
-}
+//a[href*="about"]{
+//  @include d.navTrunks;
+//  background-image: url('/public/images/items/attictrunk1.svg');
+//}
 
 a[href*="resources"]{
   margin-right: 5.5vw;

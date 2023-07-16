@@ -27,7 +27,7 @@ header > .container {
 header::before {
     // content: '';
     // background: url('./block/items/plane100px.svg') no-repeat center center/cover;
-    content: url('/images/items/plane100px.svg');
+    content: url('/public/images/items/plane100px.svg');
     display: block;
     width: clamp(200px, 12em, 500px);
     height: clamp(200px, 12em, 300px);
